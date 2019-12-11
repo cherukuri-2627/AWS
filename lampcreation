@@ -1,0 +1,7 @@
+1) login to any instance
+2) updat ethe repo
+    apt-get update
+3) check for "tasksel"
+4)if not install
+    apt-get install -y tasksel
+5) give tasksel->scrolldown->select LAMP(hit spacebar to check it)->ok->password to root and confirm->open the ipaddress in browser to check apache2 installation-->select "nano" command from LAMP for ubuntu 16 document->enter in kernel->edit by copying php content in document->ctrl x+y+enter->check in browser->ipaddress/info.php  
