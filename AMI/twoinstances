@@ -1,0 +1,7 @@
+select lampserver instance->action->create image->name->create
+goto AMI
+  Launch instance->choose AMI->now check with public ip/info.php
+
+The main advantage of AMi is,
+ we can recover pem file
+ We can recover the instance if any disaster happens as it is backuped for every week or in days or in months absed on the criticallity
