@@ -1,0 +1,16 @@
+this is to share data with multiple instances at a time
+  by using snapshot ewe can achieve this:
+    *select the volume that need to be shared and create a sanpshot of that volume
+    * from the snapshot we will be creating new volume with existing data
+    * this newly created volume will be attched to the required instance.
+
+    volume-->actions->create snapshot->name->create->actions->create volume->size->zone->create->actions->attach volume->instance.
+
+    NOTE: we can not decrese the size of the volume either we can increase or can maintain the same size
+
+    login to instance mkdir aws
+    mount volume
+    mount /dev/xvdf aws
+    go to aws cd aws
+    touch files
+    unmount and detach
