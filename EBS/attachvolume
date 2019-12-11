@@ -1,0 +1,47 @@
+1) create a volume with 5gb
+  steps:
+    goto volumes
+    attach volume
+    give the size
+    select the instance attach to that instance.
+ 
+2) Go to bash of that instance and give
+    
+    fdisk -l --> to check the newley attached volume location
+    /dev/xvdf
+
+3) Now format the volume
+     /dev/xvdf---> #mkfs.ext4 /dev/xvdf
+
+4) create the folder
+    mkdir myfolder
+
+5) now mount the volume to myfolder
+    mount /dev/xvdf myfolder
+6)    Write data on to the volume 
+    touch f1 f2 f3
+
+7) Now detach the volume
+    to detach come out of folder cd ..
+     umount myfolder
+
+8) Now deatch the volume in aws from insatnce.
+    volume-->actions-->detach volume
+
+To add the volume to another instance
+
+1) Attach the volume to the instance
+    volumes-->actions-->attach volume
+
+2) go to bash of that instance and create a folder
+    mkdir myaws
+
+3) Now mount the volume to that folder
+     mount /dev/xvdf myaws
+4) go to that folder 
+     cd myaws
+     touch g1 g2 g3
+
+5) detach rhe volume  and do detach in aws too
+
+
