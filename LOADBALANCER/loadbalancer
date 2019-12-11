@@ -1,0 +1,4 @@
+load balancer distributes customer traffic equally between all the servers by using round robin technique
+
+process:
+ Load-Balncer->create->3rd0ne->name->assign security group->change tim,interval->add instances->select runniing instances->add tag->name->review and launch->need to wait untill it shows "inservice"-->if not getting in service check with the security group -->description->copy DNS name upto .com->paste in browser with /info.php->check with the instances the load will be distributed need to check ip change.
