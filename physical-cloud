@@ -1,0 +1,14 @@
+  BASIC COMPUTER              AWS
+  	o.s                     AMI
+	Hard Drive             EBS
+	CPU                    Insatnace Type
+	Networkcard(NIC)       IP Addressing
+	Firewall               SecurityGroup
+	RAM                    RAM
+
+Instance types:
+ OnDemand:  Use and Pay
+ Reserved:   Pay and Use
+ Spot:       Bidding
+ Dedicated:  Dedicated Hardware will be allocated to that particular instance.
+ Dedicated Host: complete hardware will be allocated to that host and it is so expensive
